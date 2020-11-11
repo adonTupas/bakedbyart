@@ -686,36 +686,52 @@ color: white;
 /* -----------------MOBILE RESPONSIVE ------*/
 
 .menubx{
-height: 50px;
-width: 50px;
+height: 70px;
+width: 40px;
 @include align();
 cursor: pointer; 
 position: relative;
 display: none;
 }
 .menuline{
-height: 4px;
-width: 80%;
+height: 3px;
+width: 70%;
 background-color: $first;
 border-radius: 35px;
+transition: .2s;
 position: relative;
 &::before{
 content: '';
 position: absolute;
-height: 4px;
+height: 3px;
 width: 100%;
-transform: translateY(-13px);
+transform: translateY(-8px);
 background: $first;
 border-radius: 35px;
+transition: .2s;
 }
 &::after{
     content: '';
     position: absolute;
-    height: 4px;
+    height: 3px;
     width: 100%;
-    transform: translateY(13px);
+    transform: translateY(8px);
     background: $first;
     border-radius: 35px;
+    transition: .2s;
 }
 }
+.menubx:active .menuline{
+background: coral;
+transition: .2s;
+}
+
+.menubx:active .menuline::before{
+    background: coral;
+    transition: .2s;
+    }
+    .menubx:active .menuline::after{
+        background: coral;
+        transition: .2s;
+        }
 

@@ -1047,8 +1047,8 @@ footer {
 
 /* -----------------MOBILE RESPONSIVE ------*/
 .menubx {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1064,32 +1064,56 @@ footer {
 }
 
 .menuline {
-  height: 4px;
-  width: 80%;
+  height: 3px;
+  width: 70%;
   background-color: #f8f7a5;
   border-radius: 35px;
+  -webkit-transition: .2s;
+  transition: .2s;
   position: relative;
 }
 
 .menuline::before {
   content: '';
   position: absolute;
-  height: 4px;
+  height: 3px;
   width: 100%;
-  -webkit-transform: translateY(-13px);
-          transform: translateY(-13px);
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
   background: #f8f7a5;
   border-radius: 35px;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .menuline::after {
   content: '';
   position: absolute;
-  height: 4px;
+  height: 3px;
   width: 100%;
-  -webkit-transform: translateY(13px);
-          transform: translateY(13px);
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
   background: #f8f7a5;
   border-radius: 35px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.menubx:active .menuline {
+  background: coral;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.menubx:active .menuline::before {
+  background: coral;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.menubx:active .menuline::after {
+  background: coral;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 /*# sourceMappingURL=style.css.map */
