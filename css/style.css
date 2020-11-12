@@ -321,7 +321,8 @@
   }
   .abt-content {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 10px;
+    margin-bottom: 50px;
   }
 }
 
@@ -385,6 +386,13 @@
   width: 100%;
   color: #d4c07a;
   font-family: "IBM Plex Sans", sans-serif;
+  margin-bottom: 10px;
+}
+
+.todayfav-cnttwo {
+  width: 100%;
+  color: #d4c07a;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .todayfavbx {
@@ -393,7 +401,7 @@
 
 .todayfav-container .donutdiv {
   height: 120px;
-  width: 100px;
+  width: 120px;
 }
 
 .donut {
