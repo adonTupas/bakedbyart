@@ -162,7 +162,16 @@
     display: flex;
   }
   .home-container .line {
-    width: 380px;
+    width: 330px;
+  }
+  .home-container .home-img-cnt {
+    height: 120px;
+    width: 120px;
+  }
+  #home-title {
+    font-family: "Dancing Script", cursive;
+    letter-spacing: 2px;
+    font-size: 2.4rem;
   }
 }
 
@@ -287,72 +296,62 @@
 
 @media (max-width: 990px) {
   .circle {
+    -webkit-transition: .1s;
+    transition: .1s;
     -webkit-clip-path: circle(50% at bottom);
             clip-path: circle(50% at bottom);
   }
-  .nav-ul {
-    display: none;
+  .about {
+    padding: 100px 10px;
+    padding-top: 200px;
+  }
+  .about-displaypics {
+    width: 200px;
+    height: 200px;
   }
   .ensure {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
   }
   .abt-title {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
   .abt-title .baked {
-    font-size: 2.4rem;
+    font-size: 1.9rem;
   }
   .abt-content {
-    width: 400px;
+    width: 100%;
+    padding: 0 20px;
   }
 }
 
-/* todays favorite */
 .today-fav {
-  padding: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  position: relative;
   background: #ffffe9;
+  padding: 100px;
 }
 
-.today-fav .todayfav-container {
-  width: 450px;
-  margin: auto;
-  position: relative;
+.today-fav .todayfav-title {
+  margin-bottom: 100px;
+  width: 100%;
+  text-align: center;
 }
 
-.today-fav .donut {
-  width: 120px;
-}
-
-.tf-stylish {
+.today-fav .todayfav-title .tf-stylish {
   font-family: "Great Vibes", cursive;
-  font-size: 2.1rem;
+  font-size: 3rem;
   color: #a1583e;
 }
 
-.tf-normal {
+.today-fav .tf-normal {
   font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2rem;
   font-weight: 900;
-  font-size: 1.6rem;
-  margin-top: -20px;
+  margin-top: -28px;
   position: relative;
   z-index: 1;
 }
 
-.todayfav-imgs {
-  margin: auto;
-  position: relative;
+.today-fav .tf-align {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,21 +361,82 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.todayfav-container {
+  margin: 30px auto;
+  width: 500px;
+}
+
+.todayfav-hone {
+  width: 400px;
+  font-family: sans-serif;
+  color: #a1583e;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.todayfav-cnt {
+  width: 100%;
+  color: #d4c07a;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.todayfavbx {
+  margin-bottom: 20px;
+}
+
+.todayfav-container .donutdiv {
+  height: 120px;
+  width: 100px;
+}
+
+.donut {
+  height: 100%;
+  width: 100%;
+}
+
+.todayfav-imgs {
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 35px;
+}
+
+.order {
+  border: none;
+  padding: 8px 12px;
+  font-size: 1.1rem;
+  color: #f8f7a5;
+  background: #a1583e;
+  border-radius: 35px;
+  margin-top: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.order:active {
+  color: #a1583e;
+  background: #f8f7a5;
+}
+
+.todayfav-imgs {
+  width: 320px;
+  height: 380px;
+}
+
+.todayfav-imgs .fav-big {
+  height: 100%;
+  width: 100%;
 }
 
 .fav-big {
-  height: 380px;
-  width: 340px;
-  background: #d19178;
-  margin: 40px 10px;
-  border-radius: 20px;
-  overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 
 .fav-big .fav-bigimg {
@@ -384,74 +444,18 @@
   width: 100%;
 }
 
-.todayfav-hone {
-  color: #a1583e;
-  margin-bottom: 10px;
-}
-
-.todayfav-cnt {
-  color: #d19178;
-  font-weight: 600;
-}
-
-.todayfav-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 100px;
-  width: 100%;
-}
-
-.order {
-  margin-top: 20px;
-  padding: 10px 13px;
-  border: none;
-  background: #a1583e;
-  color: #f8f7a5;
-  font-size: 1.1rem;
-  outline: none;
-  border-radius: 35px;
-  cursor: pointer;
-}
-
-.order:active {
-  background: #d19178;
-  color: black;
-}
-
-@media (max-width: 1100px) {
+@media (max-width: 800px) {
   .today-fav {
-    padding: 100px 0;
+    padding: 100px 10px;
   }
-  .todayfavbx {
+  .todayfav-hone {
     width: 400px;
-    padding: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    font-family: sans-serif;
+    font-size: 1.6rem;
   }
-  .todayfav-cnt {
-    font-size: 1rem;
+  .todayfav-container {
+    margin: 30px auto;
+    width: 100%;
   }
 }
 

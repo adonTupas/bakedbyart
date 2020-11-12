@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACV,UAAU,EAAE,GAAG;CACd",
+    "sources": [
+        "todaysfav.scss"
+    ],
+    "names": [],
+    "file": "todaysfav.css"
+}

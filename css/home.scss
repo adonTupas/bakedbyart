@@ -64,7 +64,7 @@
     font-size: 3rem;
     }
     .home-container{
-    
+       
     @include align();
     flex-direction: column;
     
@@ -109,8 +109,20 @@
     } 
 }
     .home-container .line{
-    width: 380px;
+    width: 330px;
     }
+
+    .home-container .home-img-cnt{
+    
+        height: 120px;
+        width: 120px;
+
+    }
+    #home-title{
+        font-family: $stylish;
+        letter-spacing: 2px;
+        font-size: 2.4rem;
+        }
 }
     
     
