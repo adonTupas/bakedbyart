@@ -23,7 +23,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #ffffe9;
+  position: relative;
 }
 
 #april-img {
@@ -101,6 +106,8 @@
   font-family: "Dancing Script", cursive;
   letter-spacing: 2px;
   font-size: 3rem;
+  color: #d19178;
+  margin-bottom: 18px;
 }
 
 .home-container {
@@ -137,21 +144,56 @@
   margin-bottom: 4px;
 }
 
-.home-container .home-title {
-  font-size: 2.5rem;
-  font-family: sans-serif;
-  letter-spacing: 2px;
-  color: #d19178;
-  margin-bottom: 25px;
+.home-container .home-cupcake {
+  width: 6.4%;
 }
 
-.home-container .home-cupcake {
-  width: 14%;
+.home-container .cookiebx {
+  text-align: center;
+}
+
+.btn-cnt {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 5%;
+  text-align: center;
+}
+
+.home-btn {
+  padding: 8px 13px;
+  text-align: center;
+  outline: none;
+  color: #f8f7a5;
+  border: none;
+  background: #a1583e;
+  border-radius: 35px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 3px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.home-btn:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #a1583e;
+  background: #f8f7a5;
+  border: #ff9eb1;
+}
+
+.home-btn:active {
+  color: #f8f7a5;
+  background: #d4c07a;
+  border: #ff9eb1;
 }
 
 @media (max-width: 1000px) {
   .nav {
-    padding: 0 50px 0 20px;
+    padding: 0 20px;
   }
   .nav .nav-ul {
     display: none;
@@ -467,7 +509,6 @@
   }
 }
 
-/*  MENU SECTION */
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -551,9 +592,33 @@
   width: 100%;
 }
 
+.seemorebx {
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.3rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #a1583e;
+  padding-top: 30px;
+  cursor: pointer;
+}
+
+.breads.breadzz {
+  display: none;
+}
+
+.breads.breadzz.bredopen {
+  display: -ms-grid;
+  display: grid;
+}
+
+.seeless {
+  display: none;
+}
+
 @media (max-width: 740px) {
   .menu {
-    padding: 10px;
+    padding: 50px 10px;
   }
   .breads {
     width: 320px;
@@ -568,6 +633,67 @@
   }
 }
 
+.social-links {
+  position: fixed;
+  top: 28%;
+  left: 2%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  z-index: 55;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.link {
+  color: #b1e0da;
+  padding: 15px 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.link:hover {
+  color: brown;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media (max-width: 740px) {
+  .social-links {
+    position: fixed;
+    top: 28%;
+    left: 5%;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    z-index: 55;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .specialmenu {
   padding: 80px 80px 80px 80px;
   position: relative;
@@ -576,7 +702,7 @@
 }
 
 .special-titlebx {
-  margin-bottom: 120px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -607,7 +733,7 @@
 
 .specialty-breads {
   width: 220px;
-  height: 220px;
+  height: 240px;
   margin: 30px;
   position: relative;
   z-index: 22;
@@ -715,12 +841,7 @@
   .specialty-breads::before {
     content: '';
     position: absolute;
-    height: 100%;
-    width: 100%;
-    border: 7px solid #f8f7a5;
-    left: -20px;
-    top: -20px;
-    z-index: -1;
+    display: none;
   }
   .specialmenu {
     padding: 50px 20px;

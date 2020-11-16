@@ -3,7 +3,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background: $background;
+    position: relative;
     }
     #april-img{
     height: 100%;
@@ -62,6 +64,9 @@
     font-family: $stylish;
     letter-spacing: 2px;
     font-size: 3rem;
+    color: $fourth;
+    margin-bottom: 18px;
+    
     }
     .home-container{
        
@@ -87,20 +92,51 @@
     }
     
     .home-title{
-    font-size: 2.5rem;
-    font-family: sans-serif;
-    letter-spacing: 2px;
-    color: $fourth;
-    margin-bottom: 25px;
     }
     .home-cupcake{
-    width: 14%;
+    width: 6.4%;
+    }
+    .cookiebx{
+    text-align: center;
     }
     }
+.btn-cnt{
+position: absolute;
+left: 0;
+width: 100%;
+bottom: 5%;
+text-align: center;
+}
+.home-btn{
+padding: 8px 13px;
+text-align: center;
+outline: none;
+color: $first;
+border: none;
+background: $third;
+border-radius: 35px;
+font-size: 1.4rem;
+cursor: pointer;
+font-weight: 600;
+font-family: $vibes;
+letter-spacing: 3px;
+transition: .5s;
+&:hover{
+transition: .5s;
+color: $third;
+background: $first;
+border: $pinkish;
+}
+&:active{
+color: $first;
+background: $second;
+border: $pinkish;
+}
+}
 
-    @media(max-width:1000px){
+@media(max-width:1000px){
 .nav{
-    padding: 0 50px 0 20px;
+    padding: 0 20px;
     .nav-ul{
     display: none;
     }

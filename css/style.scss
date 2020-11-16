@@ -40,79 +40,48 @@ scroll-behavior: smooth;
 @import './home.scss';
 @import './about.scss';
 @import './todaysfav';
-/*  MENU SECTION */
+@import './menu.scss';
 
-.menu{
 
+//social links
+.social-links{
+position: fixed;
+top: 28%;
+left: 2%;
+transform: translate(-50%, 50%);
+z-index: 55;
 display: flex;
+justify-content: center;
+align-items: center;
 flex-direction: column;
-padding: 100px;
-.menu-titlebx{
-margin-bottom: 120px;
-text-align: center;
-}
-}
-.stylish-ttle{
-font-family: $vibes;
-font-size: 3rem;
-color: $third;
 
 }
-.menu-ttle{
-margin-top: -30px;
-z-index: 1;
-position: relative;
-font-weight: 900;
-font-size: 2rem;
-font-family: $peso;
+.link{
+    color:#b1e0da;
+    padding: 15px 0;
+transition: .3s;
+&:hover{
+color: brown;
+transform: scale(2);
+transition: .3s;
 }
-.menu-container{
-@include align();
-flex-wrap: wrap;
+}
+@media(max-width:740px){
+    .social-links{
+        position: fixed;
+        top: 28%;
+        left: 5%;
+        transform: translate(-50%, 50%);
+        z-index: 55;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        }
+           
 }
 
-.breads{
-width: 300px;
-height: 190px;
-margin: 20px 20px;
-padding: 12px;
-display: grid;
-grid-template-columns: 50% 50%;
-grid-column-gap: 11px;
-.bread-imgcnt{
-background: $second;
-grid-area: 1/1/3/2;
-overflow: hidden;
-
-}
-.bread-name{
-font-family: sans-serif;
-color: $fourth;
-padding: 10px;
-}
-}
-.peso{
-    font-family: $peso;
-    color: $second;
-}
-.bread-img{
-    height: 100%;
-    width: 100%;
-}
-@media(max-width: 740px){
-.menu{
-padding: 10px;
-}
-.breads{
-    width: 320px;
-    height: 200px;
-    margin: 10px auto;
-    padding: 12px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 11px;
-}    
-}
 // SPECIAL MENU
 
 .specialmenu{
@@ -123,7 +92,7 @@ background: rgba(0,0,0,.5);
 }
 
 .special-titlebx{
-margin-bottom: 120px;
+margin-bottom: 50px;
 text-align: center;
 .stylish-special{
 font-family: $vibes;
@@ -150,7 +119,7 @@ z-index: -1;
     }
 .specialty-breads{
 width: 220px;
-height: 220px;
+height: 240px;
 margin: 30px;
 position: relative;
 z-index: 22;
@@ -229,12 +198,7 @@ color: white;
         &::before{
             content: '';
             position: absolute;
-            height: 100%;
-            width: 100%;
-            border: 7px solid $first;
-            left: -20px;
-            top: -20px;
-            z-index: -1;
+            display: none;
             
     }     
     }

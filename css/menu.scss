@@ -1,0 +1,91 @@
+.menu{
+
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    .menu-titlebx{
+    margin-bottom: 120px;
+    text-align: center;
+    }
+    }
+    .stylish-ttle{
+    font-family: $vibes;
+    font-size: 3rem;
+    color: $third;
+    
+    }
+    .menu-ttle{
+    margin-top: -30px;
+    z-index: 1;
+    position: relative;
+    font-weight: 900;
+    font-size: 2rem;
+    font-family: $peso;
+    }
+    .menu-container{
+    @include align();
+    flex-wrap: wrap;
+    }
+    
+    .breads{
+    width: 300px;
+    height: 190px;
+    margin: 20px 20px;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 11px;
+    .bread-imgcnt{
+    background: $second;
+    grid-area: 1/1/3/2;
+    overflow: hidden;
+    
+    }
+    .bread-name{
+    font-family: sans-serif;
+    color: $fourth;
+    padding: 10px;
+    }
+    }
+    .peso{
+        font-family: $peso;
+        color: $second;
+    }
+    .bread-img{
+        height: 100%;
+        width: 100%;
+    }
+    .seemorebx{
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.3rem;
+    font-family: $ibxsans;
+    color: $third;
+    padding-top: 30px;
+    cursor: pointer;
+    }
+    .breads.breadzz{
+    display: none;
+    }
+    .breads.breadzz.bredopen{
+    display: grid;
+    }
+    .seeless{
+    display: none;
+    }
+    @media(max-width: 740px){
+    .menu{
+    padding: 50px 10px;
+    }
+    .breads{
+        width: 320px;
+        height: 200px;
+        margin: 10px auto;
+        padding: 12px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 11px;
+    }    
+    }
+    
