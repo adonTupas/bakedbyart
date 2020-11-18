@@ -9,13 +9,14 @@ $background:#ffffe9;
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Sans:wght@700&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200&display=swap');
 //fonts
 $peso: 'Work Sans', sans-serif;
 $lobster: 'Lobster', cursive;
 $ibxsans: 'IBM Plex Sans', sans-serif;
 $stylish:  'Dancing Script', cursive;
 $vibes: 'Great Vibes', cursive;
+$condensed: 'Barlow Semi Condensed', sans-serif;
 
 @mixin align {
 display: flex;
@@ -28,6 +29,11 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
+@mixin aroundz {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
 
 *{
 margin: 0;
@@ -36,192 +42,292 @@ box-sizing: border-box;
 scroll-behavior: smooth;
 }
 
-/* HOME */
 @import './home.scss';
 @import './about.scss';
 @import './todaysfav';
 @import './menu.scss';
+@import './social-links.scss';
+@import './specialmenu.scss';
+@import './popupmsg.scss';
 
 
-//social links
-.social-links{
-position: fixed;
-top: 28%;
-left: 2%;
-transform: translate(-50%, 50%);
-z-index: 55;
+.footersec{
+padding: 50px;
 display: flex;
 justify-content: center;
 align-items: center;
-flex-direction: column;
+background: #b1e0da;
+}
+.footer-imgbx{
+margin: 0 auto;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.custom-tell{
+margin: 0 auto;
+}
+.footer-categ{
+margin: 0 auto;
+}
+.aprilbx{
+    height: 180px;
+    width: 180px;
+border-radius: 50%;
+overflow: hidden;
+.footer-img{
+height: 100%;
+width: 100%;
+}
+}
+.followus{
+margin-left: -20px;
 
 }
-.link{
-    color:#b1e0da;
-    padding: 15px 0;
-transition: .3s;
+.footer-aa{
+color:#311716;
+font-size: 1.5rem;
+padding-right: 3px;
+
+}
+
+.custom-tell{
+font-family: $peso;
+color: #311716;
+}
+.cst-one{
+   
+}
+.custom-head{
+font-weight:700;
+font-size: 1.1rem;
+}
+.custom-cnt{
+
+    
+}
+.custom-a{
+    color: #311716;
+    font-size: 1.2rem;
+}
+.tell-head{
+    font-weight:700;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+.tell-a{
+    color: #311716;
+    font-size: 1.2rem;
+
+}
+
+.footer-categ{
+
+
+.footer-nav{
+list-style: none;
+}
+}
+.footer-li{
+padding: 10px 0;
+font-family: $ibxsans;
+
 &:hover{
-color: brown;
-transform: scale(2);
-transition: .3s;
+text-decoration: line-through;
 }
-}
-@media(max-width:740px){
-    .social-links{
-        position: fixed;
-        top: 28%;
-        left: 5%;
-        transform: translate(-50%, 50%);
-        z-index: 55;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        
-        }
-           
 }
 
-// SPECIAL MENU
-
-.specialmenu{
-padding: 80px 80px 80px 80px;
-position: relative;
-height: auto;
-background: rgba(0,0,0,.5);
+.footer-a{
+text-decoration: none;
+color: #311716;
 }
 
-.special-titlebx{
-margin-bottom: 50px;
+.last-footer{
 text-align: center;
-.stylish-special{
-font-family: $vibes;
-font-size: 3.2rem;
+padding: 8px 0;
+font-family: $ibxsans;
+background:  #311716;
 color: $first;
 }
-.menu-special{
-font-family: $peso;
-font-size: 2rem;
-font-weight: 900;
-color: white;
+
+@media(max-width: 1100px){
+    .custom-tell{
+        display: none;
+        }
+}
+@media(max-width:700px){
+
+.footer-categ{
+display: none;
+}
+.custom-tell{
+display: none;
+}
+}
+
+
+
+// orderbreads
+.ourbreadsec{
 position: relative;
-z-index: 1;
-margin-top: -30px;
+background: $background;
+padding: 90px 20px;
+}
+.ourbreadz-container{
+@include aroundz();
+flex-wrap: wrap;
+margin-bottom: 50px;
+}
+.ourbread{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-direction: column;
+position: relative;
+overflow: hidden;
+border-radius: 10px;
+margin: 30px auto;
+}
+.ourbreadimgbx{
+overflow: hidden;
+border-radius: 15px;    
+max-width: 200px;
+.ourbreadimg{
+width: 100%;
+height: 100%;
 }
 }
-#special-background{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-z-index: -1;
-    }
-.specialty-breads{
-width: 220px;
-height: 240px;
-margin: 30px;
+.bananabreadttlebx{
+margin-bottom: 70px;
+text-align: center;
+}
+.ourbananabread{
+color: $third;
+font-size: 3.2rem;
 position: relative;
 z-index: 22;
-&::before{
-content: '';
-position: absolute;
-height: 100%;
-width: 100%;
-border: 10px solid $first;
-left: -30px;
-top: -30px;
-z-index: -1;
+font-family: $condensed;
 }
-
-.special-name{
-background: $first;
-color: $third;
-font-family: sans-serif;
-text-align: center;
-padding: 5px;
-}
-.special{
-height: 100%;
-width: 100%;
-}
-}
-
-.special-cnt{
-@include align();
-flex-wrap: wrap;
-margin-bottom: 40px;
-}
-.design-ad{
-height: 70vh;
-@include align();
-.aprilmade{
-height: 300px;
-width: 690px;
-position: relative;
-z-index: 12;
-}
-}
-.april-madeimg{
-    height: 100%;
-    width: 100%;
-}
-
-.special-orderdiv{
-text-align: center;
-}
-.special-orderbtn{
-background: $first;
+.bananaline{
+height: 3px;
 border-radius: 35px;
-border: none;
-outline: none;
-padding: 8px 15px;
-font-family: sans-serif;
-font-weight: 600;
-font-size: 1.2rem;
+width: 100%;
+background: $third;
+}
+
+.requestbtnbx{
+display: flex;
+align-items: center;
+justify-content: centers;
+width: 100%;
+flex-direction: column;
+margin-bottom: 100px;
+.req-cnt{
+font-family: $peso;
+font-size: 1.5rem;
 color: $third;
-transition: .6s;
+justify-content: center;
+align-items: center;
+margin-bottom: 10px;
+}
+.requestnow, .requestcookie{
+outline: none;
+margin-left: 15px;
+padding: 5px 11px;
+font-family: sans-serif;
+color: white;
+background: $fourth;
+border: none;
+border-radius: 35px;
+font-size: 1.2rem;
+margin-top: -2px;
 cursor: pointer;
-&:active{
-transform: translateY(-20px);
-transition: .6s;
+}
+.requestnow:hover{
+color: $first;
+background: $third;
+}
+.requestnow:active{
+    color: $first;
+    background: $third;
+    }
+}
+
+.delivery-container{
+background: $second;
+padding: 70px 0;
+}
+.deliverbx{
+margin-bottom: 40px;
+@include align();
+flex-direction: column;
+width: 100%;
 color: white;
 }
+.deliver-hone{
+font-family: $peso;
+font-size: 2.1rem;
 }
-@media(max-width: 900px){
-    .specialty-breads{
-        width: 180px;
-        height: 200px;
-        margin: 50px auto;
-        position: relative;
-        z-index: 22;
-        &::before{
-            content: '';
-            position: absolute;
-            display: none;
-            
-    }     
-    }
-    .specialmenu{
-        padding: 50px 20px;
-        position: relative;
-        height: auto;
-        background: rgba(0,0,0,.5);
+.deliver-cnt{
+font-family: sans-serif;
+font-size: 1.2rem;
+}
+.ourdeliverybx{
+@include align();
+}
+.deliveryone{
+width: 500px;
+height: 320px;
+margin: 40px auto;
+.deliveryimg{
+width: 100%;
+height: 100%;
+}
+}
+@media(max-width: 740px){
+    .requestbtnbx{
+        display: flex;
+        align-items: center;
+        justify-content: centers;
+        width: 100%;
+        flex-direction: column;
+        .req-cnt{
+        font-family: $peso;
+        font-size: 1.4rem;
+        color: $third;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+        }
+        .requestnow{
+        outline: none;
+        margin-left: 15px;
+        padding: 5px 11px;
+        font-family: sans-serif;
+        color: white;
+        background: $fourth;
+        border: none;
+        border-radius: 35px;
+        font-size: 1.2rem;
+        margin-top: -2px;
+        cursor: pointer;
+        }
         }
 
 
-        .design-ad{
-            
-            .aprilmade{
-            height: 200px;
-            width: 400px;
-            position: relative;
-            z-index: 12;
+        .ourdeliverybx{
+            @include align();
+            flex-wrap: wrap;
+            }
+            .deliveryone{
+            width: 440px;
+            height: 320px;
+            .deliveryimg{
+            width: 100%;
+            height: 100%;
             }
             }
 }
-// DESIGN APRIL
-
 // Contact PAGE
 
 .contact{
@@ -304,143 +410,41 @@ cursor: pointer;
 ////////////////////////////////// FOOTER AREA
 
 
-footer{
-background:$third;
-height: 45vh;
-@include space();
-align-items: center;
-padding: 0 100px;
-position: relative;
-}
 
-.footer-imgbx{
-@include align();
-align-items: flex-start;
-margin: 0 auto;
-}
-.aprilbx{
-height: 190px;
-width: 190px;
-background: #311716;
-padding: 20px 30px;
-border-radius: 50%;
-border: 1px solid white;
-margin-top: -28px;
-.footer-img{
-    height: 100%;
-    width: 100%;
-    }
-    
-}
-.followus{
-@include align();
-flex-direction: row;
-justify-content: flex-start;
-align-items: flex-start;
-padding-top: 50px;
-margin-left: -50px;
-position: relative;
-z-index: 22;
-a{
-font-size: 24px;
-color: $first;
-padding-right: 10px;
-}
-}
-.custom-tell{
-@include align();
-flex-direction: column;
-align-items: flex-start;
-padding: 50px;
-}
 
-.custom-head{
-font-family: $peso;
-color: $first;
-font-size: 1.2rem;
-}
-.custom-cnt{
-    font-family: $peso;
-    color: $first;
-    font-size: 1rem;
-    opacity: .8;
-    margin-bottom: 5px;
-}
-.custom-a{
-font-family: $peso;
-color: white;
-font-weight: 900;
-font-size: 1.2rem;
-}
-.custom-tell div{
-margin-bottom: 20px;
-}
-.tell-head{
-    font-family: $peso;
-    color: $first;
-    font-size: 1.4rem;
-   
-    margin-bottom: 3px;
 
-}
-.tell-cnt{
-    font-family: $peso;
-    color: $first;
-    font-size: 1rem;
-    margin-bottom: 8px;
-}
-.tell-a{
-color: white;
-font-family: $peso;
-font-weight: 900;
-}
 
-////////////////CATEGORIES
-.footer-nav{
-list-style-type: none;
-margin-top: -30px;
-}
-.footer-li{
-margin: 20px;
-}
 
-.footer-a{
-color: $first;
-text-decoration: none;
-font-family: $ibxsans;
-font-weight: 600;
-transition: .4s;
-&:hover{
-    color: white;
-    transition: .4s;
-text-decoration: line-through;
-}
-&:active{
-    color: white;
-    transition: .4s;
-text-decoration: line-through;
 
-}
-}
-@media(max-width:990px){
-.footer-categ{
-display: none;
-}
-.custom-tell{
-display: none;
-}
-}
-/* COPYRIGHT */
-.last-footer{
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-background: #5d3020;
-height: 7vh;
-@include align();
-color: white;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* -----------------MOBILE RESPONSIVE ------*/
 

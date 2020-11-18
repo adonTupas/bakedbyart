@@ -21,24 +21,17 @@
 <div class="nav">
 <h2 class="logo-title">Baked.By.Art</h2>
 <ul class="nav-ul">
-<li class="menu-web">
-<a href="#home">
-<span class="nav-style">H</span>ome</a></li>
 
 <li class="menu-web">
 <a href="#about">
 <span class="nav-style">A</span>bout</a></li>
     
 <li class="menu-web">
-<a href="#gallery">
-<span class="nav-style">G</span>allery</a></li>
+<a href="order.html">
+<span class="nav-style">O</span>our Breads</a></li>
 
 <li class="menu-web">
-<a href="#menu">
-<span class="nav-style">M</span>enu</a></li>
-
-<li class="menu-web">
-<a href="#contact">
+<a href="mailto:rafaelsobook@gmail.com">
 <span class="nav-style">C</span>ontact</a></li>
 <li class="menu-web">
 <a href="#" class="nav-set"><i class="fas fa-user-cog"></i></a>
@@ -70,7 +63,7 @@
 </div>
 
 <div class="btn-cnt">
-<button class="home-btn">Order Now</button>
+<button class="home-btn opencon">Order Now</button>
 </div>
 </section>
 
@@ -117,7 +110,7 @@
             New cookie flavors will be available this Saturday ‼️ Stay safe and dry, you guys ☔️</p>
         </div>
 
-        <button class="order">Order Now</button>
+        <button class="order opencon">Order Now</button>
 
     </div>
 
@@ -229,7 +222,7 @@
 </div>
 
 <div class="special-orderdiv">
-<button class="special-orderbtn">Order Now</button>
+<button class="special-orderbtn opencon">Order Now</button>
 </div>
 </section>
 
@@ -242,33 +235,57 @@
 
 
 
-<footer>
+<footer class="footersec">
 <!-- FOOTER IMAGE-->
 <div class="footer-imgbx">
     <div class="aprilbx">
-        <img src="images/aprilpng.png" class="footer-img" alt="">
+        <img src="images/april.png" class="footer-img" alt="">
     </div>
 <!-- FOLLOW US -->
     <div class="followus">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#" class="footer-aa"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="footer-aa"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="footer-aa"><i class="fas fa-envelope"></i></a>
     </div>
 
 </div>
     
-
+<!--FORM MENU -->
+<div class="order-form">
+    <form class="original-form">
+    <img src="images/donut.png" class="order-img" alt="">
+    <input type="text" name="name"
+    placeholder="name" class="inp-namez" />
+    
+    
+    <input type="number" name="phone" 
+    placeholder="mobile no." class="inp-phone" />
+    
+    
+    <input type="text" name="location" 
+    placeholder="Delivery Address" class="inp-loc" />
+    
+    <textarea name="message"
+    cols="30" rows="10" class="messagezz"
+    placeholder="message your request and order here ..."></textarea>
+    <div class="message-btnbx">
+    <button id="form-backbtn" class="message-btn">back</button>
+    <button id="form-sendbtn" class="message-btn">send</button>
+    </div>
+    </form>
+    </div>
+    
 <!-- FOOTER CUSTOM AND TELL-->
 <div class="custom-tell">
-    <div>
+    <div class="cst-one">
     <p class="custom-head">CUSTOM ORDERS</p>
     <p class="custom-cnt">Would you like to place a Custom Order or have a special request? </p>
-    <a href="#" class="custom-a">Contact us</a>
+    <a href="#" class="custom-a opencon">message us</a>
     </div>
 
-    <div>
+    <div class="cst-two">
     <p class="tell-head">We love to hear from you</p>
-    <p class="tell-cnt">Have feedback about our products or service? Please contact Susie directly at:</p>
+    <p class="tell-cnt">Have feedback about our products or service? Please contact us directly at:</p>
     <a href="#" class="tell-a">ADONIRAM@GMAIL.COM</a>
     </div>
 </div>
@@ -282,19 +299,19 @@
         <a href="#menu" class="footer-a">MENU</a>
     </li>
     <li class="footer-li">
-        <a href="#" class="footer-a">ORDER ONLINE</a>
+        <a href="#" class="footer-a opencon">ORDER ONLINE</a>
     </li>
     <li class="footer-li">
-        <a href="#" class="footer-a">CUSTOM ORDER</a>
+        <a href="#" class="footer-a opencon">CUSTOM ORDER</a>
     </li>
     </nav>
 </div>
 
-<div class="last-footer">
-<p class="copyright">Copyright © Baked.By.Art 2020</p>
-</div>
-</footer>
 
+</footer>
+<div class="last-footer">
+    <p class="copyright">Copyright © Baked.By.Art 2020</p>
+    </div>
 <script src="/js/app.js"></script>
 </body>
 </html>

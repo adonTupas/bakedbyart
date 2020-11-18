@@ -1,0 +1,138 @@
+// SPECIAL MENU
+.specialmenu{
+    padding: 80px 80px 80px 80px;
+    position: relative;
+    height: auto;
+    background: rgba(0,0,0,.5);
+    }
+    
+    .special-titlebx{
+    margin-bottom: 50px;
+    text-align: center;
+    .stylish-special{
+    font-family: $vibes;
+    font-size: 3.2rem;
+    color: $first;
+    }
+    .menu-special{
+    font-family: $peso;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    position: relative;
+    z-index: 1;
+    margin-top: -30px;
+    }
+    }
+    #special-background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    z-index: -1;
+        }
+    .specialty-breads{
+    width: 220px;
+    height: 240px;
+    margin: 30px;
+    position: relative;
+    z-index: 22;
+    &::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 10px solid $first;
+    left: -30px;
+    top: -30px;
+    z-index: -1;
+    }
+    
+    .special-name{
+    background: $first;
+    color: $third;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 5px;
+    }
+    .special{
+    height: 100%;
+    width: 100%;
+    }
+    }
+    
+    .special-cnt{
+    @include align();
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    }
+    .design-ad{
+    height: 70vh;
+    @include align();
+    .aprilmade{
+    height: 300px;
+    width: 690px;
+    position: relative;
+    z-index: 12;
+    }
+    }
+    .april-madeimg{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .special-orderdiv{
+    text-align: center;
+    }
+    .special-orderbtn{
+    background: $first;
+    border-radius: 35px;
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: $third;
+    transition: .6s;
+    cursor: pointer;
+    &:active{
+    transform: translateY(-20px);
+    transition: .6s;
+    color: white;
+    }
+    }
+    @media(max-width: 900px){
+        .specialty-breads{
+            width: 180px;
+            height: 200px;
+            margin: 50px auto;
+            position: relative;
+            z-index: 22;
+            &::before{
+                content: '';
+                position: absolute;
+                display: none;
+                
+        }     
+        }
+        .specialmenu{
+            padding: 50px 20px;
+            position: relative;
+            height: auto;
+            background: rgba(0,0,0,.5);
+            }
+    
+    
+            .design-ad{
+                
+                .aprilmade{
+                height: 200px;
+                width: 400px;
+                position: relative;
+                z-index: 12;
+                }
+                }
+    }
+    

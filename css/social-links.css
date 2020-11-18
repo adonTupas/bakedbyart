@@ -1,0 +1,61 @@
+.social-links {
+  position: fixed;
+  top: 28%;
+  left: 2%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  z-index: 55;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.link {
+  color: #b1e0da;
+  padding: 15px 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.link:hover {
+  color: brown;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media (max-width: 740px) {
+  .social-links {
+    position: fixed;
+    top: 28%;
+    left: 5%;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+    z-index: 55;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=social-links.css.map */

@@ -25,3 +25,26 @@ seeless.addEventListener('click', () => {
         seeless.style.display="none"
                 
 });
+
+
+// FOR POP UP CONTACT FORM
+
+const orderForm = document.querySelector('.order-form');
+const openCon = document.querySelectorAll('.opencon')
+const backMessage = document.querySelector('#form-backbtn');
+
+
+
+//event listeners
+openCon.forEach( (openCo) => {
+openCo.addEventListener('click',  (e) => {
+e.preventDefault();
+orderForm.style.display = "flex";
+})
+})
+
+backMessage.addEventListener('click', (e) => {
+    e.preventDefault();
+        orderForm.style.display = "none";
+    })
+    

@@ -1,0 +1,122 @@
+// message contact
+.order-form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(27, 16, 2, 0.9);
+    @include align();
+    z-index: 999;
+    display: none;
+    }
+    .original-form{
+    width: 500px;
+    background: $first; 
+    border-radius: 30px;
+    padding: 50px;
+    position: relative;
+    }
+    .fa-envelope{
+    font-size: 1.4rem;
+    }
+    .order-img{
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100px;
+    }
+    .inp-namez{
+    width: 180px;
+    background: $fourth;
+    color: $background;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 5px 13px;
+    border-radius: 30px;
+    margin: 5px auto;
+    }
+    
+    .inp-phone{
+        width: 200px;
+        background: $fourth;
+        color: $background;
+        border: none;
+        outline: none;
+        font-size: 1.2rem;
+        padding: 5px 13px;
+        border-radius: 30px;
+        margin: 5px auto;  
+    }
+    
+    .inp-loc{
+        width: 400px;
+        background: $fourth;
+        color: $background;
+        border: none;
+        outline: none;
+        font-size: 1.2rem;
+        padding: 5px 13px;
+        border-radius: 30px;
+        margin: 5px auto;   
+    }
+    
+    .messagezz{
+        width: 400px;
+        background: $fourth;
+        color: $background;
+        border: none;
+        outline: none;
+        font-size: 1.2rem;
+        padding: 5px 13px;
+        border-radius: 30px;
+        margin: 5px auto;   
+    }
+    
+    .message-btn{
+    padding: 5px 15px;
+    font-family: $ibxsans;
+    border: none;
+    outline: none;
+    background: $fourth;
+    color: $background;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    cursor: pointer;
+    }
+    .message-btn:active{
+    color: $third;
+    background: $first;
+    
+    }
+    input::placeholder{
+    color: $background;
+    font-size: 1.1rem;
+    }
+    
+    textarea::placeholder{
+    color:$background;
+    }
+    .message-btnbx{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    }
+    
+    @media(max-width: 740px){
+        .original-form{
+            width: 400px;
+        }
+        .inp-loc{
+        width: 100%;
+        }
+        .messagezz{
+        width: 100%;
+        }
+    }
+    
+    
+    
+    
