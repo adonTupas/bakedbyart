@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bakery Shop</title>
 <link rel="stylesheet" href="css/style.css">
-
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
 <div class="social-links">
 <a href="#" class="twitterl link"><i class="fab fa-twitter"></i></a>
-<a href="#" class="facebookl link"><i class="fab fa-facebook-f"></i></a>
-<a href="#" class="instal link"><i class="fab fa-instagram"></i></a>
+<a href="https://www.facebook.com/bakedbyart" class="facebookl link"><i class="fab fa-facebook-f"></i></a>
+<a href="https://www.instagram.com/baked.by.art" class="instal link"><i class="fab fa-instagram"></i></a>
 </div>
 
-<section class="home" id="home">
+<section class="home" id="home" data-aos="fade-in">
 
 <div class="nav">
-<h2 class="logo-title">Baked.By.Art</h2>
-<ul class="nav-ul">
+<h2 class="logo-title" data-aos="fade-right">Baked.By.Art</h2>
+<ul class="nav-ul" data-aos="fade-left">
 
 <li class="menu-web">
 <a href="#about">
@@ -31,7 +32,7 @@
 <span class="nav-style">O</span>our Breads</a></li>
 
 <li class="menu-web">
-<a href="mailto:rafaelsobook@gmail.com">
+<a href="mailto:aprilbtupas@gmail.com">
 <span class="nav-style">C</span>ontact</a></li>
 <li class="menu-web">
 <a href="#" class="nav-set"><i class="fas fa-user-cog"></i></a>
@@ -39,12 +40,33 @@
 </ul>
 
 <!-- MOBILE RESPONSIVE  -->
-<div class="menubx">
-    <div class="menuline"></div>
+<!-- mobile menu button for opening menu-->
+<div class="mobo-bx">
+<div class="mobo-line"></div>
 </div>
 
+<!-- MOBILE RESPONSIVE SMALL MENU -->
+<div class="mobi-menuzbx">
+
+    <a href="#about" class="mobi-aa shut">
+    <span class="nav-style">A</span>bout
+    </a>    
+    
+    <a href="order.html" class="mobi-aa shut">
+    <span class="nav-style">O</span>ur breads
+    </a>
+    
+    <a href="mailto:aprilbtupas@gmail.com" class="mobi-aa shut">
+    <span class="nav-style">C</span>ontact
+    </a>
+    
 </div>
-<div class="home-container">
+    
+
+</div>
+
+
+<div class="home-container" data-aos="fade-down">
 
     <div class="home-img-cnt">
     <img src="images/april.png" alt="" id="april-img">
@@ -65,6 +87,7 @@
 <div class="btn-cnt">
 <button class="home-btn opencon">Order Now</button>
 </div>
+
 </section>
 
 <!-- ABOUT SECTION -->
@@ -74,11 +97,14 @@
 
 <div class="abt-container">
 
-    <div class="abt-content">
+    <div class="abt-content"  data-aos="fade-right">
     <p class="abt-title">About <span class="baked">Baked By Art</span></p>
     <p class="ensure">Baked By Art is offering classic desserts made entirely from scratch using simple, natural ingredients.
-        We assure to give a very satisfying taste that will leave your heart with more craviness !
+    <br><br>
+    Inspired by the classic recipes of my our family finest breads, Baked.By.Art created a small bakery that uses the simpliest ingredients and bring brings
+    celebration into each and every day.
     </p>
+    
     </div>
 
     <div class="about-displaypics">
@@ -94,10 +120,10 @@
 
 
     <div class="todayfav-title">
-    <p class="tf-stylish">My Today's Top Menu</p>
+    <p class="tf-stylish"  data-aos="fade-down">My Today's Top Menu</p>
     </div>
     <div class="tf-align">
-    <div class="todayfav-container">
+    <div class="todayfav-container" data-aos="fade-right">
 
         <div class="donutdiv">
         <img src="images/donut.png" class="donut" alt="">
@@ -114,7 +140,7 @@
 
     </div>
 
-    <div class="todayfav-imgs">
+    <div class="todayfav-imgs"   data-aos="fade-left">
 
         <div class="fav-big">
         <img src="images/whitecookie.jpg" class="fav-bigimg" alt="">
@@ -128,11 +154,11 @@
 <!--MENU SECTION-->
 <section class="menu" id="menu">
 
-<div class="menu-titlebx">
+<div class="menu-titlebx" data-aos="fade-up">
 <p class="stylish-ttle">Delicious Breads</p>
 </div>
 
-<div class="menu-container">
+<div class="menu-container" data-aos="fade-in">
     <div class="breads">
     <div class="bread-imgcnt">
     <img src="images/specialfour.jpg" class="bread-img" alt="">
@@ -192,12 +218,12 @@
 <section class="specialmenu" id="specialmenu">
 
 <img src="images/specialtyback.jpg" alt="" id="special-background"/>
-<div class="special-titlebx">
+<div class="special-titlebx"   data-aos="fade-left">
 <p class="stylish-special">My Specialty</p>
 </div>
 
 
-<div class="special-cnt">
+<div class="special-cnt"   data-aos="fade-right">
 
 <div class="specialty-breads">
 <img src="images/specialone.jpg" alt="" class="special onebread">
@@ -243,8 +269,8 @@
     </div>
 <!-- FOLLOW US -->
     <div class="followus">
-        <a href="#" class="footer-aa"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="footer-aa"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/bakedbyart" class="footer-aa"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/baked.by.art" class="footer-aa"><i class="fab fa-instagram"></i></a>
         <a href="#" class="footer-aa"><i class="fas fa-envelope"></i></a>
     </div>
 
@@ -286,7 +312,7 @@
     <div class="cst-two">
     <p class="tell-head">We love to hear from you</p>
     <p class="tell-cnt">Have feedback about our products or service? Please contact us directly at:</p>
-    <a href="#" class="tell-a">ADONIRAM@GMAIL.COM</a>
+    <a href="mailto:aprilbtupas@gmail.com" class="tell-a">aprilbtupas@gmail.com</a>
     </div>
 </div>
 <!-- CATRGORIES -->
@@ -313,5 +339,12 @@
     <p class="copyright">Copyright © Baked.By.Art 2020</p>
     </div>
 <script src="/js/app.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+offset: 200,
+duration: 1500
+  });
+</script>
 </body>
 </html>

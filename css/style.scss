@@ -41,6 +41,9 @@ padding:0;
 box-sizing: border-box;
 scroll-behavior: smooth;
 }
+body{
+
+}
 
 @import './home.scss';
 @import './about.scss';
@@ -49,7 +52,6 @@ scroll-behavior: smooth;
 @import './social-links.scss';
 @import './specialmenu.scss';
 @import './popupmsg.scss';
-
 
 .footersec{
 padding: 50px;
@@ -447,54 +449,120 @@ cursor: pointer;
 
 
 /* -----------------MOBILE RESPONSIVE ------*/
-
-.menubx{
-height: 70px;
-width: 40px;
-@include align();
-cursor: pointer; 
-position: relative;
-display: none;
-}
-.menuline{
-height: 3px;
-width: 70%;
-background-color: $first;
-border-radius: 35px;
-transition: .2s;
-position: relative;
-&::before{
-content: '';
-position: absolute;
-height: 3px;
-width: 100%;
-transform: translateY(-8px);
-background: $first;
-border-radius: 35px;
-transition: .2s;
-}
-&::after{
+.mobo-bx{
+    height: 40px;
+    width: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    z-index: 555;
+    }
+    .mobo-line{
+    height: 4px;
+    border-radius: 5px;
+    width: 30px;
+    background: $first;
+    position: relative;
+    transition: .5s ease-in-out;
+    }
+    .mobo-line::before{
     content: '';
     position: absolute;
-    height: 3px;
-    width: 100%;
-    transform: translateY(8px);
+    height: 4px;
+    border-radius: 5px;
+    width: 30px;
     background: $first;
-    border-radius: 35px;
-    transition: .2s;
-}
-}
-.menubx:active .menuline{
-background: coral;
-transition: .2s;
-}
-
-.menubx:active .menuline::before{
-    background: coral;
-    transition: .2s;
+    transform: translateY(-8px);
+    transition: .5s ease-in-out;
     }
-    .menubx:active .menuline::after{
-        background: coral;
-        transition: .2s;
+    .mobo-line::after{
+        content: '';
+        position: absolute;
+        height: 4px;
+        border-radius: 5px;
+        width: 30px;
+        background: $first;
+        transform: translateY(8px);
+        transition: .5s ease-in-out;
+    }
+    
+    // add classlist effects
+    .mobo-bx.mobo-slide .mobo-line{
+        transition: .5s ease-in-out;
+        transform: translate(-24px, 0);
+        background: transparent;
+        z-index: 555;
+    }
+    .mobo-bx.mobo-slide .mobo-line::before{
+        content: '';
+        position: absolute;
+        height: 4px;
+        border-radius: 5px;
+        width: 30px;
+        background: $third;
+        transform: translate(24px, 0) rotate(-45deg);
+        transition: .5s ease-in-out;
+        opacity: 1;
+        z-index: 2;
         }
+    .mobo-bx.mobo-slide .mobo-line::after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    border-radius: 5px;
+    width: 30px;
+    background: $third;
+    transform: translate(24px, 0) rotate(45deg);
+    transition: .5s ease-in-out;
+    opacity: 1;
+    z-index: 2;
+    }
+    
+    // MOBIIII SLIDING EFFECTS
 
+.mobi-menuzbx{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:$first;
+    z-index: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: right;
+    flex-direction: column;
+    transform: scaleX(0);
+    transition: .5s ease-in-out;
+    }
+    
+    .mobi-aa{
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 40px 0;
+    transition: .5s ease-in-out;
+    color: $third;
+    font-size: 1.3rem;
+    }
+    
+    // adding the slide on menu
+    
+    .slide-right{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:$first;
+        z-index: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: scaleX(1);
+        transition: .5s ease-in-out;
+        }

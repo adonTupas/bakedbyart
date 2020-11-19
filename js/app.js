@@ -3,13 +3,7 @@ const seemorebx = document.querySelector('.seemore');
 const otherbred = document.querySelectorAll('.breads.breadzz');
 const seeless = document.querySelector('.seeless');
 // Event Listeners
-logoTitle.addEventListener('click', () => {
-location.reload();
-alert('ready')
-})
-
 seemorebx.addEventListener("click", (e) => {
-
 otherbred.forEach((other) => {
 other.style.display="grid";
 })
@@ -48,3 +42,32 @@ backMessage.addEventListener('click', (e) => {
         orderForm.style.display = "none";
     })
     
+
+// THIS IS FOR THE MOBILE RESPONSIVE EFFECTS
+const moboBx = document.querySelector('.mobo-bx');
+const mobiMenuBx = document.querySelector('.mobi-menuzbx');
+const shut = document.querySelectorAll('.shut');
+
+let moboOpen = false;
+moboBx.addEventListener('click', () => {
+
+if(!moboOpen){
+moboBx.classList.add('mobo-slide');
+mobiMenuBx.classList.add('slide-right');
+moboOpen = true
+}else{
+moboBx.classList.remove('mobo-slide');
+mobiMenuBx.classList.remove('slide-right');
+moboOpen = false;
+}
+})
+
+shut.forEach( (shu) => {
+shu.addEventListener('click', () => {
+
+moboBx.classList.remove('mobo-slide');
+mobiMenuBx.classList.remove('slide-right');
+moboOpen = false;
+
+})
+})
