@@ -29,6 +29,7 @@
           flex-direction: column;
   background: #ffffe9;
   position: relative;
+  overflow: hidden;
 }
 
 #april-img {
@@ -371,6 +372,7 @@
 .today-fav {
   background: #ffffe9;
   padding: 100px;
+  overflow: hidden;
 }
 
 .today-fav .todayfav-title {
@@ -426,14 +428,14 @@
 
 .todayfav-cnt {
   width: 100%;
-  color: #d4c07a;
+  color: #a1583e;
   font-family: "IBM Plex Sans", sans-serif;
   margin-bottom: 10px;
 }
 
 .todayfav-cnttwo {
   width: 100%;
-  color: #d4c07a;
+  color: #a1583e;
   font-family: "IBM Plex Sans", sans-serif;
 }
 
@@ -510,6 +512,7 @@
 }
 
 .menu {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -699,6 +702,7 @@
   position: relative;
   height: auto;
   background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
 .special-titlebx {
